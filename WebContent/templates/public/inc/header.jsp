@@ -325,20 +325,20 @@ img.wp-smiley, img.emoji {
 												<ul class="sub-menu">
 													<li id="menu-item-136"
 														class="menu-item menu-item-type-custom menu-item-object-custom menu-item-136"><a
-														href="https://demo.colorlib.com/newspaper-x/#">World
-															News</a></li>
+														href="https://demo.colorlib.com/newspaper-x/#">World News</a></li>
 													<li id="menu-item-137"
 														class="menu-item menu-item-type-custom menu-item-object-custom menu-item-137"><a
-														href="https://demo.colorlib.com/newspaper-x/#">World
-															Events</a></li>
-												</ul></li>
+														href="https://demo.colorlib.com/newspaper-x/#">World Events</a></li>
+												</ul>
+											</li>
 											<li id="menu-item-130"
 												class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-130"><a
 												href="https://demo.colorlib.com/newspaper-x/category/events/">Events</a></li>
 											<li id="menu-item-131"
 												class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-131"><a
 												href="https://demo.colorlib.com/newspaper-x/category/editorial/">Editorial</a></li>
-										</ul></li>
+										</ul>
+									</li>
 									<li id="menu-item-135"
 										class="menu-item menu-item-type-post_type menu-item-object-page menu-item-135"><a
 										href="https://demo.colorlib.com/newspaper-x/blog/">Blog</a></li>
