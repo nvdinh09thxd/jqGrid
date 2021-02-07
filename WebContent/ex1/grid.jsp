@@ -5,10 +5,10 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Insert title here</title>
-<link rel="stylesheet" href="css/jquery-ui.min.css">
-<link rel="stylesheet" href="css/ui.jqgrid.min.css">
-<script src="js/jquery.min.js"></script>
-<script src="js/jquery.jqgrid.min.js"></script>
+<link rel="stylesheet" href="templates/css/jquery-ui.min.css">
+<link rel="stylesheet" href="templates/css/ui.jqgrid.min.css">
+<script src="templates/js/jquery.min.js"></script>
+<script src="templates/js/jquery.jqgrid.min.js"></script>
 </head>
 <body>
 <table id="list47"></table>

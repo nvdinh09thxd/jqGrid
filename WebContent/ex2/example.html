@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Ví dụ jqGrid</title>
+		<meta charset="utf-8" />
+		<link href="css/jquery-ui.min.css" rel="stylesheet" type="text/css"/>
+		<link rel="stylesheet" type="text/css" href="css/ui.jqgrid.min.css" />
+		<script src="js/jquery.min.js" type="text/javascript"></script>
+		<script src="js/jquery.jqgrid.min.js" type="text/javascript"></script>
+		
+	</head>
+	<body>
+		<div class="wrapper">
+			<table id="grid"></table>	
+		</div>
+	</body>
+	<script>
+		$(function () {
+			$("#grid").jqGrid({
+				colModel: [
+					{ name: "firstName" },
+					{ name: "lastName" },
+					{ name: "age" },
+					{ name: "female", template: "booleanCheckbox" },
+				],
+				data: [
+					{firstName: "Angela", lastName: "Merkel", age: 19, female: true },
+					{firstName: "Vladimir", lastName: "Putin", age: 19, female: true },
+					{firstName: "David", lastName: "Cameron", age: 19, female: false },
+					{firstName: "Barack", lastName: "Obama", age: 19, female: true },
+					{firstName: "François", lastName: "Hollande", age: 19, female: false },
+				]
+			});
+		});
+	</script>
+</html>

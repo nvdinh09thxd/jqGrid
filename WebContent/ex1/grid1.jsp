@@ -8,11 +8,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Your page title</title>
-    <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/jquery-ui.min.css">
-	<link rel="stylesheet" href="css/ui.jqgrid.min.css">
-	<script src="js/jquery.min.js"></script>
-	<script src="js/jquery.jqgrid.min.js"></script>
+    <link rel="stylesheet" href="templates/css/font-awesome.min.css">
+    <link rel="stylesheet" href="templates/css/jquery-ui.min.css">
+	<link rel="stylesheet" href="templates/css/ui.jqgrid.min.css">
+	<script src="templates/js/jquery.min.js"></script>
+	<script src="templates/js/jquery.jqgrid.min.js"></script>
     <script>
     $(function () {
         "use strict";
