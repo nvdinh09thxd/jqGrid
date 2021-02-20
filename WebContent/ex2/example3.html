@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Your page title</title>
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.15.5/css/ui.jqgrid.min.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.15.5/jquery.jqgrid.min.js"></script>
+</head>
+<body>
+<table id="grid1"></table>
+</body>
+<script>
+    //<![CDATA[
+    $(function () {
+	    "use strict";
+	    $("#grid1").jqGrid({
+	        colModel: [
+	            { name: "name", label: "Client", width: 53 },
+	            { name: "invdate", label: "Date", width: 90, align: "center", formatter: "date", formatoptions: { newformat: "d-M-Y" } },
+	            { name: "amount", label: "Amount", width: 65, template: "number" },
+	            { name: "closed", label: "Closed", width: 59, template: "booleanCheckbox" },
+	            { name: "ship_via", label: "Shipped via", width: 87, align: "center",
+	                formatter: "select", formatoptions: { value: "FE:FedEx;TN:TNT;DH:DHL", defaultValue: "DH" },
+	                stype: "select", searchoptions: { value: ":Any;FE:FedEx;TN:TNT;DH:DHL" } }
+	        ],
+	        data: [
+	            { id: "10",  invdate: "2015-10-01", name: "test",   amount: "" },
+	            { id: "20",  invdate: "2015-09-01", name: "test2",  amount: "300.00", closed: false, ship_via: "DH" },
+	            { id: "30",  invdate: "2015-09-01", name: "test3",  amount: "400.00", closed: false, ship_via: "FE" },
+	            { id: "40",  invdate: "2015-10-04", name: "test4",  amount: "200.00", closed: true,  ship_via: "TN" },
+	            { id: "50",  invdate: "2015-10-31", name: "test5",  amount: "300.00", closed: false, ship_via: "FE" },
+	            { id: "60",  invdate: "2015-09-06", name: "test6",  amount: "400.00", closed: false, ship_via: "FE" },
+	            { id: "70",  invdate: "2015-10-04", name: "test7",  amount: "200.00", closed: true,  ship_via: "TN" },
+	            { id: "80",  invdate: "2015-10-03", name: "test8",  amount: "300.00", closed: false, ship_via: "FE" },
+	            { id: "90",  invdate: "2015-09-01", name: "test9",  amount: "400.00", closed: false, ship_via: "TN" },
+	            { id: "100", invdate: "2015-09-08", name: "test10", amount: "500.00", closed: true,  ship_via: "TN" },
+	            { id: "110", invdate: "2015-09-08", name: "test11", amount: "500.00", closed: false, ship_via: "FE" },
+	            { id: "120", invdate: "2015-09-10", name: "test12", amount: "500.00", closed: false, ship_via: "FE" }
+	        ],
+	        iconSet: "fontAwesome",
+	        rownumbers: true,
+	        sortname: "invdate",
+	        sortorder: "desc",
+	        toppager: true,
+	        pager: true,
+	        rowNum: 5,
+	        viewrecords: true,
+	        caption: "The grid, which demonstrates formatters, templates and the pager"
+	    }).jqGrid("filterToolbar");
+	});
+    //]]>
+</script>
+</html>
